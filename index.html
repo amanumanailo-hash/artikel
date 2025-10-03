@@ -11,6 +11,22 @@
       margin: 0;
       padding: 0;
     }
+    nav {
+      background: #0d47a1;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: flex-start;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 20px;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+    }
     header {
       background-color: #1a237e;
       color: #fff;
@@ -69,10 +85,17 @@
 </head>
 <body>
 
+  <!-- Navigasi -->
+  <nav>
+    <a href="https://catatanelang.berdu.pw/">⬅ Kembali ke Web Utama</a>
+  </nav>
+
+  <!-- Header -->
   <header>
     <h1>📚 Kumpulan Artikel</h1>
   </header>
 
+  <!-- Konten -->
   <div class="container">
     <!-- Artikel 1 -->
     <div class="card">
@@ -84,8 +107,6 @@
       </p>
       <a href="tulisan1.html">Baca Selengkapnya →</a>
     </div>
-
-    <!-- Artikel berikutnya bisa ditambahkan di sini -->
   </div>
 
 </body>
