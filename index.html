@@ -4,46 +4,32 @@
   <meta charset="utf-8">
   <title>Daftar Artikel - Catatan Elang</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; background: #f9f9f9; }
-    h1 { color: #222; }
-    .artikel { 
-      margin-bottom: 20px; 
-      padding: 15px; 
-      background: #fff; 
-      border-radius: 8px; 
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-    }
-    .artikel a { 
-      font-size: 18px; 
-      font-weight: bold; 
-      text-decoration: none; 
-      color: #0066cc; 
-    }
-    .artikel a:hover { text-decoration: underline; }
-    .artikel p { margin: 5px 0; color: #555; }
-    footer { margin-top: 40px; }
+    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; background: #fff; }
+    h1 { color: #333; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin-bottom: 15px; }
+    a { text-decoration: none; color: #0066cc; font-weight: bold; }
+    a:hover { text-decoration: underline; }
+    .desc { font-size: 0.9em; color: #666; }
   </style>
 </head>
 <body>
   <h1>📚 Daftar Artikel</h1>
-  <p>Berikut adalah kumpulan artikel Catatan Elang:</p>
+  <ul>
+    <!-- Artikel pertama -->
+    <li>
+      <a href="tulisan1.html">Artikel Pertama</a><br>
+      <span class="desc">Halo pembaca! Ini adalah artikel pertama di Catatan Elang.</span>
+    </li>
 
-  <!-- Artikel 1 -->
-  <div class="artikel">
-    <a href="tulisan1.html">Judul Artikel Pertama</a>
-    <p>Deskripsi singkat tentang artikel pertama. Misalnya pengantar isi tulisan.</p>
-  </div>
+    <!-- Slot kosong untuk artikel berikutnya -->
+    <li>
+      <a href="tulisan2.html">Artikel Kedua (belum ada)</a><br>
+      <span class="desc">Nantinya artikel kedua akan muncul di sini.</span>
+    </li>
+  </ul>
 
-  <!-- Tambahkan artikel baru di bawah sini -->
-  <!--
-  <div class="artikel">
-    <a href="tulisan2.html">Judul Artikel Kedua</a>
-    <p>Deskripsi singkat tentang artikel kedua.</p>
-  </div>
-  -->
-
-  <footer>
-    <p><a href="https://catatanelang.berdu.pw/">← Kembali ke Home</a></p>
-  </footer>
+  <hr>
+  <p><a href="https://catatanelang.berdu.pw/">← Kembali ke Home</a></p>
 </body>
 </html>
