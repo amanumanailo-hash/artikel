@@ -1,31 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <title>Daftar Artikel - Catatan Elang</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Artikel</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; background: #fff; }
-    h1 { color: #333; }
-    ul { list-style-type: none; padding: 0; }
-    li { margin-bottom: 20px; }
-    a { text-decoration: none; color: #0066cc; font-weight: bold; font-size: 1.1em; }
-    a:hover { text-decoration: underline; }
-    .desc { font-size: 0.9em; color: #555; }
+    body {
+      font-family: "Georgia", serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1a237e;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #1a237e;
+    }
+    .card p {
+      color: #555;
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background-color: #1a237e;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .card a:hover {
+      background-color: #3949ab;
+    }
   </style>
 </head>
 <body>
-  <h1>📚 Daftar Artikel</h1>
-  <ul>
-    <!-- Artikel pertama -->
-    <li>
-      <a href="tulisan1.html">Dilema Sosial Ekonomi Daerah</a><br>
-      <span class="desc">
-        Kebijakan penertiban kawasan hutan dan tambang liar oleh Presiden Prabowo Subianto adalah langkah penting menyelamatkan kekayaan negara. Namun, kebijakan ini juga menimbulkan dampak sosial ekonomi serius bagi masyarakat daerah.
-      </span>
-    </li>
-  </ul>
 
-  <hr>
-  <p><a href="https://catatanelang.berdu.pw/">← Kembali ke Home</a></p>
+  <header>
+    <h1>📚 Kumpulan Artikel</h1>
+  </header>
+
+  <div class="container">
+    <!-- Artikel 1 -->
+    <div class="card">
+      <h2>Dilema Sosial Ekonomi Daerah</h2>
+      <p>
+        Kebijakan penertiban hutan dan tambang liar di era Presiden Prabowo menjadi dilema. 
+        Di satu sisi menyelamatkan kekayaan negara, namun di sisi lain menekan ekonomi lokal, 
+        merumahkan ribuan pekerja, dan menurunkan daya beli masyarakat.
+      </p>
+      <a href="tulisan1.html">Baca Selengkapnya →</a>
+    </div>
+
+    <!-- Artikel berikutnya bisa ditambahkan di sini -->
+  </div>
+
 </body>
 </html>
